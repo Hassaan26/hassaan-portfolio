@@ -30,7 +30,8 @@
         
 
         <!-- google fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 
         <script src="{% static 'js/modernizr.js' %}"></script>
 
@@ -41,6 +42,9 @@
         <![endif]-->
 
         <!-- Header area -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
         <header id="header">
             <div class="center text-center">
                 <h1 class="bigheadline">Hassaan Riaz</h1>
@@ -203,6 +207,8 @@
         <!-- Testimonial Area -->
 
         <section id="testimonial" class="testimonial-area">
+
+        <div id="progress-container"></div>
             <div class="container">
                 <h2 class="block_title">Testimonials</h2>
                 <div class="row">
@@ -318,6 +324,14 @@
         <script src="{% static 'js/owl.carousel.js' %}"></script>
         <script src="{% static 'js/script.js' %}"></script>
         <script src="{% static 'js/google-code-prettify/prettify.js' %}"></script>
+        <script type="text/javascript">
+            $(window).load(function(){
+               // PAGE IS FULLY LOADED  
+               // FADE OUT YOUR OVERLAYING DIV
+               $('#loader').fadeOut();
+               $('#loader-wrapper').fadeOut();
+            });
+        </script>
 
     </body>
 </html>
