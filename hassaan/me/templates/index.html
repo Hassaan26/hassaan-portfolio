@@ -13,11 +13,11 @@
     <!-- css -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
-	<link href="{% static 'css/nivo-lightbox.css' %}" rel="stylesheet" />
-	<link href="{% static 'css/nivo-lightbox-theme/default/default.css' %}" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
 	<link href="{% static 'css/animations.css' %}" rel="stylesheet" />
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.circliful.css' %}" rel="stylesheet">
+    <link href="{% static 'css/material-design-iconic-font.min.css' %}" rel="stylesheet">
 	<link href="{% static 'color/default.css' %}" rel="stylesheet">
 	<link rel="icon" href="{% static 'img/favicon.ico' %}"/>
     <!-- =======================================================
@@ -286,9 +286,10 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="row gallery-item">
                         <div class="col-md-3 animated fadeInUp">
-							<a href="img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+							<!-- <a href="img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
 								<img src="img/works/1.jpg" class="img-responsive" alt="img">
-							</a>
+							</a> -->
+							<div id="test-circle"></div>
 						</div>
 						<div class="col-md-3 animated fadeInUp slow">
 							<a href="img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
@@ -393,13 +394,8 @@
     <!-- Core JavaScript Files -->
     <script src="{% static 'js/jquery.min.js' %}"></script>	 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'js/jquery.sticky.js' %}"></script>
-    <script src="{% static 'js/jquery.easing.min.js' %}"></script>	
-	<script src="{% static 'js/jquery.scrollTo.js' %}"></script>
-	<script src="{% static 'js/jquery.appear.js' %}"></script>
-	<script src="{% static 'js/stellar.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
 	<script src="{% static 'js/css3-animate-it.js' %}"></script>
+	<script src="{% static 'js/jquery.circliful.js' %}"></script>
     <script type="text/javascript">
 	    $(window).load(function(){
 	       // PAGE IS FULLY LOADED  
@@ -407,6 +403,20 @@
 	       $('#loader').fadeOut();
 	       $('#loader-wrapper').fadeOut();
 	    });
+	    $( document ).ready(function() { // 6,32 5,38 2,34
+        $("#test-circle").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 38,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+    });
 	</script>
 </body>
 
