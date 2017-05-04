@@ -267,7 +267,7 @@
 
 	</section>
 	<!-- /Section: works -->
-	<section id="works" class="home-section color-dark text-center" style="background-color: #F9F9F9;">
+	<section id="works" class="home-section color-dark text-center">
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
@@ -285,27 +285,25 @@
             <div class="row animatedParent">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="row gallery-item">
-                        <div class="col-md-3 animated fadeInUp">
-							<!-- <a href="img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/1.jpg" class="img-responsive" alt="img">
-							</a> -->
-							<div id="test-circle"></div>
+                        <div class="col-md-2 animated fadeInUp">
+							<div id="html"><p>HTML/Bootstrap</p></div>
 						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/2.jpg" class="img-responsive" alt="img">
-							</a>
+						<div class="col-md-2 animated fadeInUp slow">
+							<div id="css"><p>CSS3</p></div>
 						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/3.jpg" class="img-responsive" alt="img">
-							</a>
+						<div class="col-md-2 animated fadeInUp">
+							<div id="jquery"><p>jquery</p></div>
 						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/4.jpg" class="img-responsive" alt="img">
-							</a>
+						<div class="col-md-2 animated fadeInUp">
+							<div id="angular"><p>Angular JS</p></div>
 						</div>
+						<div class="col-md-2 animated fadeInUp slower">
+							<div id="bootstrap"><p>Photoshop</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp slower">
+							<div id="pd"><p>Python/Django</p></div>
+						</div>
+						
 					</div>
 	
                 </div>
@@ -381,11 +379,11 @@
 					<ul class="footer-menu">
 						<li><a href="https://www.linkedin.com/in/hassaan-riaz-093a6651/"><i class="fa fa-linkedin"></i></a></li>
 				        <li><a href="https://www.facebook.com/muhammadhassaan.riaz"><i class="fa fa-facebook"></i></a></li>
-				        <li><a href="https://github.com/Hassaan26"><i class="fa fa-github"></i></a></li>`
+				        <li><a href="https://github.com/Hassaan26"><i class="fa fa-github"></i></a></li>
 				    </ul>
 				</div>
-				<div class="col-md-6 text-right copyright">
-					<p>Copyright &copy; 2017 . Designed by <a href="#" rel="nofollow">hassaanriaz.com</a></p> 
+				<div class="col-md-6 text-right copyright animatedParent">
+					<p class="animated fadeIn">Copyright &copy; 2017 . Designed by <a href="#" rel="nofollow">hassaanriaz.com</a></p> 
 				</div>
 			</div>	
 		</div>
@@ -404,12 +402,72 @@
 	       $('#loader-wrapper').fadeOut();
 	    });
 	    $( document ).ready(function() { // 6,32 5,38 2,34
-        $("#test-circle").circliful({
+        $("#html").circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 5,
             backgroundBorderWidth: 5,
-            percent: 38,
+            percent: 80,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+        $("#css").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 80,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+        $("#bootstrap").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 50,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+        $("#jquery").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 70,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+        $("#angular").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 50,
+            textSize: 24,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
+        $("#pd").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 5,
+            percent: 40,
             textSize: 24,
             textStyle: 'font-size: 12px;',
             textColor: '#666',
@@ -417,6 +475,7 @@
             percentages: [10, 20, 30]
         });
     });
+
 	</script>
 </body>
 
