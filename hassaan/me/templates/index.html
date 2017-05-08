@@ -11,14 +11,15 @@
     <title>Hassaan Riaz - Computer Science Professional</title>
 	
     <!-- css -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
 	<link href="{% static 'css/animations.css' %}" rel="stylesheet" />
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/jquery.circliful.css' %}" rel="stylesheet">
-    <link href="{% static 'css/material-design-iconic-font.min.css' %}" rel="stylesheet">
+	<link href="{% static 'color/default.css' %}" rel="stylesheet">
 	<link rel="icon" href="{% static 'img/favicon.ico' %}"/>
+	
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -72,6 +73,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="active"><a href="#intro">Home</a></li>
                                 <li><a href="#about">About Us</a></li>
+                                <li><a href="#skill">Skills</a></li>
   							    <li><a href="#service">Services</a></li>
                                 <li><a href="#works">Works</a></li>					
                                 <li><a href="#contact">Contact</a></li>
@@ -114,6 +116,49 @@
 	</section>
 	<!-- /Section: about -->
 	
+	<!-- Section: skills -->
+
+	<section id="skill" class="home-section color-dark text-center" style="background-color: #F9F9F9;">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">	
+					<div class="animatedParent">
+						<div class="section-heading text-center">
+							<h2 class="h-bold animated bounceInDown">Skills</h2>
+							<div class="divider-header"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+            <div class="row animatedParent">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row gallery-item">
+                        <div class="col-md-2 animated fadeInUp">
+							<div id="html"><p>HTML/Bootstrap</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp slow">
+							<div id="css"><p>CSS3</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp">
+							<div id="jquery"><p>jquery</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp">
+							<div id="angular"><p>Angular JS</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp slower">
+							<div id="bootstrap"><p>Photoshop</p></div>
+						</div>
+						<div class="col-md-2 animated fadeInUp slower">
+							<div id="pd"><p>Python/Django</p></div>
+						</div>
+					</div>
+                </div>
+            </div>	
+		</div>
+	</section>
+	<!-- /Section: skills -->
 	
 	<!-- Section: services -->
     <section id="service" class="home-section color-dark bg-gray">
@@ -237,50 +282,6 @@
 
 	<!-- /Section: works -->
 
-	<!-- Section: skills -->
-
-	<section id="works" class="home-section color-dark text-center" style="background-color: #F9F9F9;">
-		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">	
-					<div class="animatedParent">
-						<div class="section-heading text-center">
-							<h2 class="h-bold animated bounceInDown">Skills</h2>
-							<div class="divider-header"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-            <div class="row animatedParent">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="row gallery-item">
-                        <div class="col-md-2 animated fadeInUp">
-							<div id="html"><p>HTML/Bootstrap</p></div>
-						</div>
-						<div class="col-md-2 animated fadeInUp slow">
-							<div id="css"><p>CSS3</p></div>
-						</div>
-						<div class="col-md-2 animated fadeInUp">
-							<div id="jquery"><p>jquery</p></div>
-						</div>
-						<div class="col-md-2 animated fadeInUp">
-							<div id="angular"><p>Angular JS</p></div>
-						</div>
-						<div class="col-md-2 animated fadeInUp slower">
-							<div id="bootstrap"><p>Photoshop</p></div>
-						</div>
-						<div class="col-md-2 animated fadeInUp slower">
-							<div id="pd"><p>Python/Django</p></div>
-						</div>
-					</div>
-                </div>
-            </div>	
-		</div>
-	</section>
-	<!-- /Section: skills -->
-
 	<!-- Section: contact -->
     <section id="contact" class="home-section nopadd-bot color-dark text-center">
 		<div class="container marginbot-50">
@@ -355,11 +356,108 @@
 	</footer>
 
     <!-- Core JavaScript Files -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>	 
+    <!-- <script src="{% static 'js/jquery.min.js' %}"></script>	 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/css3-animate-it.js' %}"></script>
 	<script src="{% static 'js/jquery.circliful.js' %}"></script>
-	<script src="{% static 'js/custom.js' %}"></script>
+	<script src="{% static 'js/jquery.scrollTo.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script> -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>	 
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>	
+	<script src="{% static 'js/jquery.scrollTo.js' %}"></script>
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/nivo-lightbox.min.js' %}"></script>
+	<script src="{% static 'js/jquery.circliful.js' %}"></script>
+	
+    <script src="{% static 'js/custom.js' %}"></script>
+	<script src="{% static 'js/css3-animate-it.js' %}"></script>
+    <script type="text/javascript">
+    	$(window).load(function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+   $('#loader').fadeOut();
+   $('#loader-wrapper').fadeOut();
+});
+$( document ).ready(function() { // 6,32 5,38 2,34
+	$("#html").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 80,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+	$("#css").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 80,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+	$("#bootstrap").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 50,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+	$("#jquery").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 70,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+	$("#angular").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 50,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+	$("#pd").circliful({
+	    animation: 1,
+	    animationStep: 5,
+	    foregroundBorderWidth: 5,
+	    backgroundBorderWidth: 5,
+	    percent: 40,
+	    textSize: 24,
+	    textStyle: 'font-size: 12px;',
+	    textColor: '#666',
+	    multiPercentage: 1,
+	    percentages: [10, 20, 30]
+	});
+});
+    </script>
     
 </body>
 

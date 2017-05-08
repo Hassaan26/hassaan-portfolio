@@ -10,7 +10,7 @@
 			backgroundColor: "#ccc",
 			pointColor: "none",
 			fillColor: 'none',
-			foregroundrderWidth: 15,
+			foregroundBorderWidth: 15,
 			backgroundBorderWidth: 15,
 			pointSize: 28.5,
 			fontColor: '#aaa',
@@ -193,31 +193,6 @@
 				oneStep = settings.target / 100;
 			}
 
-			if (settings.animation == 1) {
-				if (settings.animateInView) {
-					$(window).scroll(function () {
-						checkAnimation();
-					});
-				} else {
-					animate();
-				}
-			} else {
-				circle
-					.attr("stroke-dasharray", calculateFill + ", 20000");
-
-				if (settings.showPercent == 1) {
-					myTimer
-						.find('.number')
-						.text(text);
-				} else {
-					myTimer
-						.find('.number')
-						.text(settings.target);
-					myTimer
-						.find('.percent')
-						.text('');
-				}
-			}
 
 			function animate() {
 				var timer = window.setInterval(function () {
@@ -268,19 +243,6 @@
 							.text('');
 					}
 				}.bind(circle), interval);
-			}
-
-			
-
-			function checkAnimation() {
-				// If the animation has already been started
-				if (circle.hasClass('start')) return;
-
-				if (isElementInViewport(circle)) {
-					// Start the animation
-					circle.addClass('start');
-					setTimeout(animate, 250)
-				}
 			}
 
 			function mergeDataAttributes(settings, dataAttributes) {
