@@ -6,8 +6,8 @@
 
 		var settings = $.extend({
 			// These are the defaults.
-			foregroundColor: "#3498DB",
-			backgroundColor: "#ccc",
+			foregroundColor: "#3DC9B3",
+			backgroundColor: "#F9F9F9",
 			pointColor: "none",
 			fillColor: 'none',
 			foregroundrderWidth: 15,
