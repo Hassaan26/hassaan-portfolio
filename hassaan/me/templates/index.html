@@ -115,7 +115,7 @@
 		</div>
 	</section>
 	<!-- /Section: about -->
-	
+
 	<!-- Section: skills -->
 
 	<section id="skill" class="home-section color-dark text-center" style="background-color: #F9F9F9;">
@@ -255,23 +255,23 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="row gallery-item">
                         <div class="col-md-3 animated fadeInUp">
-							<a href="img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/1.jpg" class="img-responsive" alt="img">
+							<a href="{% static 'img/works/1.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="{% static 'img/works/1.jpg' %}" class="img-responsive" alt="img">
 							</a>
 						</div>
 						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/2.jpg" class="img-responsive" alt="img">
+							<a href="{% static 'img/works/2.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="{% static 'img/works/2.jpg' %}" class="img-responsive" alt="img">
 							</a>
 						</div>
 						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/3.jpg" class="img-responsive" alt="img">
+							<a href="{% static 'img/works/3.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="{% static 'img/works/3.jpg' %}" class="img-responsive" alt="img">
 							</a>
 						</div>
 						<div class="col-md-3 animated fadeInUp">
-							<a href="img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/4.jpg" class="img-responsive" alt="img">
+							<a href="{% static 'img/works/4.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="{% static 'img/works/4.jpg' %}" class="img-responsive" alt="img">
 							</a>
 						</div>
 					</div>
@@ -341,14 +341,29 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 animatedParent">
-					<ul class="footer-menu animated fadeIn">
+				<div class="animatedParent clr-white">
+					<div class="col-md-4"> <i class="fa fa-map-marker"></i>
+				        <p>Lahore , Pakistan</p>
+			        </div>
+			        <div class="col-md-4"> <i class="fa fa-envelope-o"></i>
+				        <p>hello@hassaanriaz.com</p>
+			        </div>
+	        	    <div class="col-md-4"> <i class="fa fa-phone"></i>
+				        <p> +923454124598</p>
+				    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 pull-right">
+					<ul class="footer-menu">
 						<li><a href="https://www.linkedin.com/in/hassaan-riaz-093a6651/"><i class="fa fa-linkedin"></i></a></li>
 				        <li><a href="https://www.facebook.com/muhammadhassaan.riaz"><i class="fa fa-facebook"></i></a></li>
 				        <li><a href="https://github.com/Hassaan26"><i class="fa fa-github"></i></a></li>
 				    </ul>
 				</div>
-				<div class="col-md-6 text-right copyright animatedParent">
+			</div>
+			<div class="row">
+				<div class="copyright animatedParent">
 					<p class="animated fadeIn">Copyright &copy; 2017. Designed by <a href="#" rel="nofollow">hassaanriaz.com</a></p> 
 				</div>
 			</div>	
@@ -356,14 +371,6 @@
 	</footer>
 
     <!-- Core JavaScript Files -->
-    <!-- <script src="{% static 'js/jquery.min.js' %}"></script>	 
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'js/css3-animate-it.js' %}"></script>
-	<script src="{% static 'js/jquery.circliful.js' %}"></script>
-	<script src="{% static 'js/jquery.scrollTo.js' %}"></script>
-	<script src="{% static 'js/stellar.js' %}"></script>
-	<script src="{% static 'js/jquery.appear.js' %}"></script>
-	<script src="{% static 'js/custom.js' %}"></script> -->
 	<script src="{% static 'js/jquery.min.js' %}"></script>	 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/jquery.sticky.js' %}"></script>
@@ -373,16 +380,15 @@
 	<script src="{% static 'js/stellar.js' %}"></script>
 	<script src="{% static 'js/nivo-lightbox.min.js' %}"></script>
 	<script src="{% static 'js/jquery.circliful.js' %}"></script>
-	
     <script src="{% static 'js/custom.js' %}"></script>
 	<script src="{% static 'js/css3-animate-it.js' %}"></script>
     <script type="text/javascript">
-    	$(window).load(function(){
-   // PAGE IS FULLY LOADED  
-   // FADE OUT YOUR OVERLAYING DIV
-   $('#loader').fadeOut();
-   $('#loader-wrapper').fadeOut();
-});
+	   $(window).load(function(){
+	   // PAGE IS FULLY LOADED  
+	   // FADE OUT YOUR OVERLAYING DIV
+	   $('#loader').fadeOut();
+	   $('#loader-wrapper').fadeOut();
+	});
 $( document ).ready(function() { // 6,32 5,38 2,34
 	$("#html").circliful({
 	    animation: 1,
