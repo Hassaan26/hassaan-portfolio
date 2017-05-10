@@ -11,6 +11,13 @@
 	padding:0;
 	margin:0;
 }
+.top-marign{
+	margin-top: 10px;
+}
+.header-font{
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
 .clr-white{
 	color: #fff;
 }
