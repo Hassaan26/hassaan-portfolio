@@ -11,6 +11,27 @@
 	padding:0;
 	margin:0;
 }
+.fa-map-marker{
+	color: #F7544C;
+}
+.fa-envelope-o{
+	color: #AAAAA0;
+}
+.fa-phone{
+	color: #008A32;
+}
+.fa-linkedin{
+	color: #fff;
+}
+.fa-github{
+	color: #fff;
+}
+.fa-facebook{
+	color: #fff;
+}
+.social-icons{
+	padding-right: 10px;
+}
 .top-marign{
 	margin-top: 10px;
 }
